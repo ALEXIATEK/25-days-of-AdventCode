@@ -1,4 +1,4 @@
-import { numbers } from "./RandomNumbers";
+import { numbers } from "../../Day01/RandomNumbers";
 
 //count numbers in RandomNumbers array
 

@@ -1,20 +1,20 @@
-import { leftSortedColumnNumbers } from "../PartOne/AscendingOrderSort";
-import { rightSortedColumnNumbers } from "../PartOne/AscendingOrderSort";
+import { leftSortedColumnNumbers } from "../PartOne/AscendingOrderSort.js";
+import { rightSortedColumnNumbers } from "../PartOne/AscendingOrderSort.js";
 
 function countOccurences(leftSortedColumnNumbers, rightSortedColumnNumbers) {
-  const frequency = {};
+  const frequencyMap = {};
 
-  leftSortedColumnNumbers.forEach(number => {
+  rightSortedColumnNumbers.forEach(number => {
 
-    frequency[number] = (frequency[number] || 0 ) + 1;
+    frequencyMap[number] = (frequencyMap[number] || 0 ) + 1;
     
   });
 
   const result = {};
 
-  rightSortedColumnNumbers.forEach(number => {
+  leftSortedColumnNumbers.forEach(number => {
 
-    result[number] = frequency[number] || 0 ;
+    result[number] = frequencyMap[number] || 0 ;
 
   });
 
