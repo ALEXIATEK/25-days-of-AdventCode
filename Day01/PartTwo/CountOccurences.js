@@ -1,7 +1,7 @@
 import { leftSortedColumnNumbers } from "../PartOne/AscendingOrderSort.js";
 import { rightSortedColumnNumbers } from "../PartOne/AscendingOrderSort.js";
 
-function countOccurences(leftSortedColumnNumbers, rightSortedColumnNumbers) {
+export function countOccurences(leftSortedColumnNumbers, rightSortedColumnNumbers) {
   const frequencyMap = {};
 
   rightSortedColumnNumbers.forEach(number => {

@@ -1,8 +1,8 @@
-import { rawData } from './Reports.js';
+import { rawData } from '../Reports.js';
 
 // formatData.js
 function formatRawData(rawData) {
-    return rawData.trim().split('\n').map(line => `"${line.trim()}",`).join('\n');
+    return rawData.trim().split('\n').map(line => line.trim());
   }
 
 export const formattedData = formatRawData(rawData);
